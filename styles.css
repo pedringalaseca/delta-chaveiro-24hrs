@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('foto de fundo chaveiro.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+nav {
+    background-color: #000;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.whatsapp-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.whatsapp-icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    flex: 1;
+    max-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 36px;
+    color: #fff;
+    position: relative;
+}
+
+.banner-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: orange;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .service {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+}
