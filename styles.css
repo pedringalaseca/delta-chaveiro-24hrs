@@ -31,7 +31,6 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     font-size: 18px;
-    display: inline-block;
 }
 
 section {
@@ -43,17 +42,14 @@ section h2 {
     text-align: center;
 }
 
-.whatsapp-icons {
+section ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
-    margin: 20px 0;
 }
 
-.whatsapp-icons img {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    cursor: pointer;
-    border-radius: 8px; /* Adiciona bordas arredondadas, opcional */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra, opcional */
+section li {
+    padding: 5px 0;
 }
 
 .services {
@@ -66,8 +62,6 @@ section h2 {
     flex: 1;
     max-width: 200px;
     margin: 10px;
-    cursor: pointer;
-    text-align: center;
 }
 
 .service img {
@@ -99,6 +93,19 @@ footer {
     background-color: orange;
 }
 
+.whatsapp-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.whatsapp-icons img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px; /* Adiciona bordas arredondadas, opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra, opcional */
+}
+
 @media (max-width: 768px) {
     header {
         padding: 50px 20px;
@@ -118,7 +125,7 @@ footer {
     }
 
     .service {
+        flex: 1 1 100%;
         max-width: 100%;
-        margin: 5px 0;
     }
 }
