@@ -49,34 +49,30 @@ section h2 {
 }
 
 .whatsapp-icons img {
-    width: 50px;
-    height: 50px;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
     cursor: pointer;
+    border-radius: 8px; /* Adiciona bordas arredondadas, opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra, opcional */
 }
 
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Adicionando espaço entre os itens */
 }
 
 .service {
-    flex: 1 1 200px; /* Garantindo que os itens tenham pelo menos 200px de largura e possam crescer */
+    flex: 1;
     max-width: 200px;
     margin: 10px;
     cursor: pointer;
     text-align: center;
-    padding: 10px;
-    background-color: #f9f9f9; /* Fundo para destacar os itens */
-    border-radius: 8px;
 }
 
 .service img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 4px; /* Bordas arredondadas para as imagens */
 }
 
 footer {
@@ -122,7 +118,7 @@ footer {
     }
 
     .service {
-        flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura disponível em telas menores */
         max-width: 100%;
+        margin: 5px 0;
     }
 }
